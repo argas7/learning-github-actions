@@ -8,5 +8,6 @@ jobs:
       - run: echo "My repository":" ${{ github.repository }}"
       - name: Files in the repository
       - run: ls ${{ github.workspace }}
+      - name: My current directory
       - run: pwd
       - uses: ./.github/actions/hello-world-action@feature/customizing-actions

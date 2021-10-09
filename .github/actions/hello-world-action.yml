@@ -1,0 +1,7 @@
+name: Hello World Action for test
+on: [push]
+jobs:
+  Hello-World-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 Hello World!!!!!"

@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: https://github.com/argas7/learning-github-actions@feature/customizing-actions@./.github/actions/hello-world-action.yml
+      - uses: actions/hello-world-action@feature/customizing-actions

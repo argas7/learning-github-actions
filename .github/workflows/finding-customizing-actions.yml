@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo "My repository":" ${{ github.repository }}"
       - name: Files in the repository
-      - run: ls ${{ github.workspace }}
+        run: ls ${{ github.workspace }}
       - name: My current directory
-      - run: pwd
+        run: pwd
       - uses: ./.github/actions/hello-world-action@feature/customizing-actions

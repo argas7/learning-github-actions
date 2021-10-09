@@ -1,8 +1,8 @@
 name: Finding and customizing Github Actions
 on: [push]
 jobs:
-  build:
+  create-workflow-to-call-another-one:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ./.github/actions/hello-world-action
+      - uses: ./.github/actions/hello-world-action@feature/customizing-actions

@@ -5,4 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: echo "My repository":" ${{ github.repository }}"
+      - name: Files in the repository
+        run: ls ${{ github.workspace }}
+        run: pwd
       - uses: ./.github/actions/hello-world-action@feature/customizing-actions
